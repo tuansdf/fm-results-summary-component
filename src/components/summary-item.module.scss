@@ -8,6 +8,10 @@
   background-color: hsla(var(--summary-color), 0.075);
 
   font-size: 1rem;
+
+  @media (min-width: 1440px) {
+    padding: 1rem;
+  }
 }
 
 .icon {

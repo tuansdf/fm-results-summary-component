@@ -22,5 +22,9 @@ body {
 @media (min-width: 1440px) {
   body {
     max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
