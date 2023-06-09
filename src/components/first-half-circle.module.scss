@@ -1,0 +1,38 @@
+.circle {
+  --margin-vertical: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-tracks: center;
+  width: 8rem;
+  padding: 1rem;
+  margin: var(--margin-vertical) 0;
+  aspect-ratio: 1;
+
+  background-image: linear-gradient(
+    to bottom,
+    hsl(var(--violet-blue)),
+    hsl(var(--persian-blue))
+  );
+
+  border-radius: 9999px;
+  & > .title {
+    font-size: 3rem;
+    font-weight: 800;
+
+    @media (min-width: 1440px) {
+      font-size: 4rem;
+    }
+  }
+
+  & > .subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(var(--light-lavender), 0.5);
+  }
+
+  @media (min-width: 1440px) {
+    --margin-vertical: 2rem;
+    width: 11rem;
+  }
+}

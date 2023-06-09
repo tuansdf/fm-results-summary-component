@@ -1,0 +1,22 @@
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 1.5rem;
+
+  & > .heading {
+    margin-top: 1.5rem;
+
+    font-weight: 700;
+    color: hsl(var(--dark-gray-blue));
+
+    @media (min-width: 1440px) {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding-inline: 2rem;
+  }
+}

@@ -32,8 +32,9 @@ const summary = [
 export const SummaryItemList = () => {
   return (
     <div className={classes["container"]}>
-      {summary.map((summaryItem) => (
+      {summary.map((summaryItem, i) => (
         <SummaryItem
+          key={i}
           icon={summaryItem.icon}
           score={summaryItem.score}
           category={summaryItem.category}
