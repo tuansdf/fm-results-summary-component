@@ -29,6 +29,10 @@
     font-size: 1rem;
     font-weight: 700;
     color: hsl(var(--light-lavender), 0.5);
+
+    @media (min-width: 1440px) {
+      font-size: 1.125rem;
+    }
   }
 
   @media (min-width: 1440px) {
