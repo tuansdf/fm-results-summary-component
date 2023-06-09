@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+
+  width: 100%;
+  padding: 0.875rem 1rem;
+  margin-top: 1.5rem;
+
+  border: none;
+  border-radius: 9999px;
+
+  background-color: hsl(var(--dark-gray-blue));
+
+  color: hsl(var(--white));
+  font-weight: 700;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  &-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0%;
+    z-index: 1;
+
+    background-image: linear-gradient(
+      to bottom,
+      hsl(var(--light-slate-blue)),
+      hsl(var(--light-royal-blue))
+    );
+
+    transition-property: opacity;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 100%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 2rem;
+  }
+}

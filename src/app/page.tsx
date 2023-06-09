@@ -1,4 +1,4 @@
-import { SummaryItemList } from "~/components";
+import { SummaryButton, SummaryItemList } from "~/components";
 import classes from "./page.module.scss";
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
     <div className={classes["container"]}>
       {/* top */}
       <div className={classes["top"]}>
-        <h2 className={classes["heading"]}>Your result</h2>
+        <h2 className={classes["heading"]}>Your Result</h2>
         {/* circle */}
         <div className={classes["circle"]}>
           <div className={classes["title"]}>76</div>
@@ -22,7 +22,7 @@ export default function Home() {
       <div className={classes["bottom"]}>
         <h2 className={classes["heading"]}>Summary</h2>
         <SummaryItemList />
-        <button className={classes["button"]}>Continue</button>
+        <SummaryButton />
       </div>
     </div>
   );

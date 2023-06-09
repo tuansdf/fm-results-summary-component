@@ -5,6 +5,8 @@
   @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    border-radius: 1rem;
+    box-shadow: 0 2rem 4rem hsl(var(--pale-blue));
   }
 }
 
@@ -34,7 +36,7 @@
     color: hsl(var(--light-lavender));
 
     @media (min-width: 1440px) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -83,8 +85,8 @@
 
   & > .subtitle {
     font-size: 1rem;
-    font-weight: 500;
-    color: hsl(var(--light-lavender));
+    font-weight: 700;
+    color: hsl(var(--light-lavender), 0.5);
   }
 
   @media (min-width: 1440px) {
@@ -108,26 +110,6 @@
     @media (min-width: 1440px) {
       margin-top: 0;
       font-size: 1.25rem;
-    }
-  }
-
-  & > .button {
-    width: 100%;
-    padding: 0.875rem 1rem;
-    margin-top: 1.5rem;
-
-    border: none;
-    border-radius: 9999px;
-
-    background-color: hsl(var(--dark-gray-blue));
-
-    color: hsl(var(--white));
-    font-weight: 700;
-
-    cursor: pointer;
-
-    @media (min-width: 1440px) {
-      margin-top: 2rem;
     }
   }
 
