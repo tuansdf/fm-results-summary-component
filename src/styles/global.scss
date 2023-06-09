@@ -12,3 +12,15 @@
   --light-lavender: 241, 100%, 89%;
   --dark-gray-blue: 224, 30%, 27%;
 }
+
+body {
+  max-width: 375px;
+  margin-inline: auto;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+}

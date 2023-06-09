@@ -1,0 +1,23 @@
+.container {
+  margin-top: 1.5rem;
+
+  & > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.summary-red {
+  --summary-color: var(--light-red);
+}
+
+.summary-green {
+  --summary-color: var(--green-teal);
+}
+
+.summary-yellow {
+  --summary-color: var(--orangey-yellow);
+}
+
+.summary-blue {
+  --summary-color: var(--cobalt-blue);
+}
